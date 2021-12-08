@@ -1,0 +1,93 @@
+GitHub
+
+Terminal do windows
+-Mudar de pastas
+	cd ou cd nome_da_pasta
+	cd.. (retrocede um nível)
+-Listar as pastas
+	dir
+-Criar pastas/arquivos
+	mkdir
+-Deletar pastas/arquivos
+	rmdir / dir
+-Limpar a tela
+	cls
+
+cd c:\users\peterson\documents mkdir workspace
+
+echo hello > hello.txt
+
+rmdir workspace /s /q
+
+*** INSTALAÇÃO ***
+https://git-scm.com/download/win
+
+-SHA1 (Secure Hash Algorithm - Algoritmo de criptográfia gera um conjunto de caracteres de 40 dígitos)
+
+openssl sha1 nome_do_arquivo (irá gerar a chave criptografada)
+
+-Objetos fundamentais
+Blobs
+	echo 'conteudo' | git hash-object --stdin
+	echo -e 'blob 9\0conteudo' | openssl sha1
+Trees
+	Armazena blob
+	readme rakefile lib
+	apontam para arvores, blobs ou bolhas.
+Commits
+	Aponta para uma arvore, parente, autor e mensagem.
+	Possui sha1
+
+-Sistema distribuído
+-Segurança
+
+-Chaves SSH
+	SSH and GPS keys
+ssh-keygen -t ed25519 -C mslmarcelosilva@gmail.com
+cd /c/Users/Peterson/.ssh/
+ls
+cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBJXCvvGi5i4IZbv3HCpD8K8GTngywRDavHayLTSvJ9J mslmarcelosilva@gmail.com
+No github adicionar a chave em SSH and GPS keys
+No git bash
+ssh-add id_ed25519
+
+Tokens de acesso pessoal
+	Usar o token do github e usar o comando git clone passando o protocolo HTTP
+
+teste
+git clone e passar o caminho do github
+
+mkdir livro-receitas	
+
+-git init (inicia o repositório)
+ls -a(mostra arquivos e pastas ocultas)
+git config --global user.email "mslmarcelosilva@gmail.com"
+git config --global user.name "Marcelo"
+-git add
+	git add nome_do_arquivo
+	git add * (seleciona tudo)
+
+-git commit
+	git commit -m "comentário"
+tracked ou untracked
+modified unmodified staged
+
+-git status
+	mv nome_da_pasta (para moverm um arquivo para outra pasta)
+
+Caso queira apagar o e-mail ou usuário
+	git config --global unset user.email 
+	git config --global unset user.name
+
+-git remote add origin link_do_github (Adiciona ao repositório remoto)
+-git remote -v(lista os repositórios)
+-git push origin master(empurra para o repositório remoto)
+
+Resolvendo conflitos
+-git pull origin master
+altera o quer precis
+-git add *
+-git commit -m ""
+-git push origin master
+
