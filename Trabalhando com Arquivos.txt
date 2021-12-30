@@ -1,0 +1,126 @@
+---Listar diretórios
+
+using System.IO;
+
+criar classe
+criar metodo public void (string caminho){
+	return retornoCamiho = Directory.GetDirectory(caminho);
+	
+	foreach(var retorno in retornoCaminho){
+	CW(retorno)}
+
+}
+
+No programa
+criar variavel que recebe o caminho;
+instanciar a classe;
+chamar a variavel.metodo(passar variavel caminho);
+
+----Caso queira listar todos os diretorios implementar no metodo retornoCDiretorios
+metodo public void (string caminho, "*", SearchOption.AllDirectories){
+	return retornoDiretorios = Directory.GetDirectory(caminho);
+	
+	foreach(var retorno in retornoDiretorios){
+	CW(retorno)}
+
+}
+
+---Listar arquivos
+criar metodo public void (string caminho){
+	return retornoArquivos = Directory.GetFiles(caminho);
+	
+	foreach(var retorno in retornoArquivos){
+	CW(retorno)}
+
+}
+
+----Caso queira listar todos os arquivos implementar no metodo retornoArquivos
+metodo public void (string caminho, "*", SearchOption.AllDirectories){
+	return retornoArquivos = Directory.GetFiles(caminho);
+	
+	foreach(var retorno in retornoArquivos){
+	CW(retorno)}
+
+}
+
+----Caso queira listar todos os arquivos que terminem com .txt implementar no metodo retornoArquivos
+metodo public void (string caminho, "*.txt", SearchOption.AllDirectories){
+	return retornoArquivos = Directory.GetFiles(caminho);
+	
+	foreach(var retorno in retornoArquivos){
+	CW(retorno)}
+
+}
+
+---Criar diretório
+implementar metodo CriarDiretorio(string caminho){
+	var retorno = Directory.CreateDirectory(caminho);
+	cw(retorno.FullName);
+}
+
+Path.Combine(caminho, "nomeDaPasta","nomeDaSubPasta");
+
+--Apagar diretório
+implementar metodo ApagarDiretorio(string caminho, bool apagarArquivos){
+	Directory.Delete(caminho, apagarArquivos);
+}
+
+---Criar arquivo de texto
+implementar metodo CriarArquivoTexto(string caminho, string contrudo){
+	if (!File.Exists(caminho))
+	{File.WriteAllText(caminho, conteudo);}
+}
+
+---Criar arquivo texto com stream
+implementar metodo CriarArquivoTextoStream(string caminho, List<string>conteudo){
+	using(var stream = File.CreatText(caminho, conteudo));
+	foreach (var linha in conteudo){
+	stream.WriteLine(linha);
+	}
+}
+
+---Adicionar novas linhas sem apagar o conteúdo existente
+implementar metodo AdicionarTexto(string caminho, string conteudo){
+	File.AppendAllText(caminho, conteudo);
+}
+
+---Adicionar Texto stream
+implementar metodo AdicionarArquivoTextoStream(string caminho, List<string>conteudo){
+	using(var stream = File.AppendText(caminho));
+	foreach (var linha in conteudo){
+	stream.WriteLine(linha);
+	}
+}
+
+---Lendo Arquivos
+implementar metodo LerArquivo(string caminho){
+	var conteudo = File.ReadAllLines(caminho);
+	foreach (var linha in conteudo){
+	cw(linha);
+	}
+}
+
+---Lendo ArquivosStream
+implementar metodo LerArquivoStream(string caminho){
+	string linha = string.Empty;
+	using(var stream = File.OpenText(caminho)){
+	while((linha = stream.ReadLine()) != null){
+		cw(linha)}
+	}
+}
+
+---Movendo Arquivo
+implementar metodo MoverArquivo(string caminho, string novoCaminho){
+	File.Move(caminho, novoCaminho);
+}
+
+---Copiando Arquivo
+implementar metodo CopiarArquivo(string caminho, string novoCaminho, bool sobrescrever){
+	File.Copy(caminho, novoCaminho, sobrescrever);
+}
+
+---Deletando Arquivo
+implementar metodo DeletarArquivo(string caminho){
+	File.Delete(caminho);
+}
+

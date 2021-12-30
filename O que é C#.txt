@@ -1,0 +1,24 @@
+O que é C#?
+CLR(Common Language Runtime)
+Conjunto unificado de bibliotecas de classes
+Atualmente o compilador do C# é o Roslyn
+
+Como funciona?
+Compilado em linguagem intermediaria(IL)
+Assembly são o código e recursos .exe ou .dll
+
+Quando o C# é executado o assembly é executado na CLR.
+Em seguida a CLR executa o JIT(just in time) converte o IL em instrução de máquina.
+
+CLR
+Garbage Collector(Coletor de lixo)
+Exception Handler(Controla exceção)
+Resources Manager(Gerenciador de recursos)
+
+Estrutura de programa
+programas/namespaces/tipo/membros/assemlies
+
+Pilha
+-FIFO
+F10 avança linha
+F11 entra o método
