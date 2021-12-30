@@ -1,0 +1,56 @@
+Introdução ao C# e .Net
+
+.NET
+Framework que permite a comunicação em várias linguagens em (CLI)C++,F#,C#e VB
+Conjunto de códigos prontos, através de bibliotecas
+
+C#
+Linguagem orientada a objetos fortemente tipada, baseada em C++ e traços de Pascal e Java
+
+Solução é um container que organiza os projetos relacionados
+Gerenciador de soluções adiciona classes, diretórios e mexe na forma geral do projeto.
+-Gerenciar Pacotes do NuGet para solução...
+Exibir>Gerenciador de Soluções
+
+Estruturas - Namespace
+-Organizam as classes.
+-para usar a classe de outro namespace colocamos using no começo do código
+
+System é um namespace que possui classes.
+
+Estruturas - Classe
+-Contém métodos, propriedades, campos e eventos que são chamados de membros.
+-Objeto é uma classe instânciada.
+-Criando metodos com prop, tab, tab.
+-Instânciar classe e invocar o metodo através da variável instânciada.
+
+Estruturas - Interface
+-É como uma classe base que serve de molde para várias classes.
+-Uma classe que implementa uma interface deve implementar todos os membros.
+-Criar a interface usando 
+Interface IAnimal
+-Criar os metodos, 
+exemplo: void Nome(string nome); void Dono(string nomeDono);
+-Criar a classe logo abaixo herdando de interface, 
+exemplo: class Animal:Animal
+-Vincular Interface com métodos da Classe,
+exemplo: void IAnimal.Nome(string nome){ this.Nome = nome;}
+
+Programa principal
+using Interface;
+Animal animal = new Animal();
+animal.Nome = "Doguinho";
+
+Estruturas - Enum
+-Declara um conjunto de constantes nomeadas que começam do 0 e aumentam de 1 em 1
+enum Pessoas{João, Maria, Paula}
+-using Enum;
+-Chamando enum no programa:
+var pessoa1 = (Pessoas)0;
+Pessoas pessoa2 = Pessoas.João;
+
+Debbugging
+-Depuração feita através do breakpoint ou F9
+-F5 só executa o que esta dentro do static void Main
+-F10 executa linha por linha
+

@@ -1,0 +1,31 @@
+GitHub
+
+Terminal do windows
+-Mudar de pastas
+	cd ou cd nome_da_pasta
+	cd.. (retrocede um nível)
+-Listar as pastas
+	dir
+-Criar pastas/arquivos
+	mkdir
+-Deletar pastas/arquivos
+	rmdir / dir
+-Limpar a tela
+	cls
+
+cd c:\users\peterson\documents mkdir workspace
+
+echo hello > hello.txt
+
+rmdir workspace /s /q
+
+*** INSTALAÇÃO ***
+https://git-scm.com/download/win
+
+-SHA1 (Secure Hash Algorithm - Algoritmo de criptográfia gera um conjunto de caracteres de 40 dígitos)
+
+echo "ola mundo" | openssl sha1
+
+-Objetos fundamentais
+-Sistema distribuído
+-Segurança

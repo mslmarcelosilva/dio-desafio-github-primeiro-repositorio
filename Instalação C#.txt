@@ -1,0 +1,33 @@
+Visual Studio
+-Instalação
+-Versão Comunidade
+
+Ferramentas>Obter Ferramentas e Funcionalidades
+-Desenvolvimento para desktop e dotnet
+Templates
+Nome do Projeto e Solução(onde ficam todos os projetos)
+Gerenciador de Solução
+static void Main
+
+Depuração(Ocorre através de um breakpoint)
+Comandos
+F9
+F10 - Continuar por linha
+Janela Depurar> QuickWatch ou Shift + F9
+Pesquisar por variável ou expressão
+
+Integração com git e github
+Clonar Repositório
+Git>Criar Repositório
+Exibir>Alterações do GIT
+Exibir>Repositório GIT
+Git>Repositórios Locais
+
+Testes
+-Botão direito em cima do metodo e clicar em criar testes de unidade
+Padrão AAA
+Arrange(Organizar)define o valor dos dados do método a ser testado
+Act(Agir) invoca o método
+Assert(Declarar) verifica a ação do método
+
+Testes>Executar todos os testes

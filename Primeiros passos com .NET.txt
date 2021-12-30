@@ -1,0 +1,83 @@
+Primeiros passos com .NET
+
+-Microsoft iniciou 1970 com Basic
+-Decada de 80, parceria com IBM e criam o DOS.
+-Decada de 90 (IDE's e runtimes)cria Visual Studios 97 com VB5,VB FOX PRO5, C++ 5 e J++
+-1998 Visual Studio 6
+-1999 Scott Guthrie criou ferramenta ASP+ e chamou de ASPX
+Jason Zander ajudou a criar common runtime para VB e C++(CLR)
+Anders Hejlsberg começou a trabalhar com C#
+Sun Microsystems fez acordo para a mycrosoft não mexer mais com Java
+-2000 lança .NET 1.0 chamado de Next Generation Windows Services.
+Miguel de Icaza começa a trabalhar no projeto MONO
+-2002 Visual Studio .NET com C# 1.0 conhecido como 22 linguagens, 1 plataforma.
+-2003 .NET 1.1, VS 2003, trabalham em melhorias para CLR2
+Linguagem->Compiler->Common Language Infrastructure->Common Intermediare Language->Common Language Runtime->Linguagem de máquina(0 e 1)
+-2005 .NET 2.0 com C# 2.0
+-2007-2008 .NET 3.5 com C# 3.0 Visual Studio 2008, começam a atuar em ASP.NET MVC e a se falar em AZURE
+-2010 .NET 4.0 com C# 4.0 VS 2010 e F#, Windows Azure
+Anders Hejlsberg começa a trabalhar com Typescript
+-2011 Miguel de Icaza inicia Xamarin, desenvolvia em C# aplicativos para Android e IOS.
+-2012 .NET 4.5, C# 5.0 VS 2012, lança Typescript
+-2013 .NET 4.5.1 VS2013, Roslyn novo compilador para C# e VB.NET
+ASP.NET MVC, Web API e SignalR
+-2014 Satya Nadella se torna CEO da Microsoft, cria .NET Foundation para gestão de projetos em open source.
+Conceito de ASP.NET Core
+-2015 .NET4.6 C#6.0 VSCode, VS 2015
+-2016 Adquire a Xamarin e lança VS for Mac, .NET Core 1.0 open source e multiplataforma
+-2017 .NET Framework 4.7 C#7 VS2017, .NET Core 2.0 
+-2019 .NET Framework 4.8 C#7.3 VS 2019 .NET Core 3.0 C#8
+-2020 .NET Framework 4.8 e deixa de ser evoluído, junto com WCF e ASP.NET Webforms
+
+O que é, como usar e onde usar .NET?
+Infraestrutura para desenvolvimento de software criada pela Microsoft
+.Net Core/.Net Framework/Mono/Universal Windows Plataform(UWP)
+-.Net Standard Library
+.Net Framework - WPF/Windows Forms/ASP.Net
+.Net Core - UWP/ ASP.Net Core
+Xamarin - IOS/ Android /OS X
+ 
+Runtimes(Ambiente de execução)
+.Net Core: CoreCLR e CoreRT
+.Net Framework - CLR
+Mono - Mono Runtime
+UWP - .Net Native
+
+Suporta(C#, F#, VB)
+
+Onde (Desktop, Web, Cloud, Mobile, Gaming, Iot, AI)
+
+(stackoverflow)
+
+******Instalação .Net 6.0 + SDK
+é free, open source
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-installer
+no CMD
+dotnet --version
+
+Plugins C#, C# extensions
+
+*******VSCode
+https://code.visualstudio.com/
+
+Nuget - (gerenciador e pacotes para dotnet)
+
+CLI do .Net
+dotnet --help no CMD
+dotnet --info
+dotnet new -help
+dotnet new console
+dotnet new console -n DigitalInnovationOne
+cd DigitalInnovationOne
+explorer . (abre a pasta)
+code . (abre no visual code)
+dotnet restore (restaura os pacotes)
+dotnet build (restaura os pacotes e compila)
+dotnet run
+(Executar em outro nível de diretório)dotnet run -p CaminhoDaPasta/
+
+Criando uma aplicação Console
+
+
+
+
